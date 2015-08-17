@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    script(type='text/javascript').
+      if (foo) {
+         bar(1 + 5)
+      }
+  body
+
+.container
+  .letters
+    -for (var i = 1; i <=7; i++)
+      .letter #{i}
+
+.inputs
+  input#new-text(type="text" placeholder="Enter up to 7 letters" maxlength="7")
+  button#change-text Animate
