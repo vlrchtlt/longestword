@@ -1,0 +1,7 @@
+<h1><%= @task.text %></h1>
+
+<% if @task.status == false %>
+  <p> reste à faire</p>
+<% else %>
+  <p>DONE</p>
+<% end -%>
