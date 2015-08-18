@@ -1,0 +1,17 @@
+<hr>
+<h2 class="text-center">Here is your new grid :</h2>
+<hr>
+
+<div container class="text-center">
+  <h2><ul class="inline">
+    <% @grid.each do |letter| %>
+      <li><%= letter %></li>
+    <% end %>
+  </ul></h2>
+  <hr>
+  <form action="/game" method="get">
+    <label for="longestworld">What is your longest world ?</label>
+    <input type="text"  class="controller" id="world-attempt" name="attempt" placeholder="your world">
+    <input type="submit" value="Go!">
+  </form>
+</div>
